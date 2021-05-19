@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: table;
+}
+
+body{
+    background-color: #e5e5e5;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    color: white;   
+}
+
+.row{
+    padding-top: 50px;
+}
+
+#descripcion-tarea{
+    margin-top: 20px;
+}
+
+.d-grid{
+    padding-top: 20px;
+}
+
+.card{
+    margin: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
+    margin-bottom: 50px;
+}
+
+#titulo{
+    font-style: italic;
+}
+
+footer {
+    background-color: black;
+    display: table-row;
+    height: 0;
+    text-align: center;
+}
+
+#datepicker {
+    font-style: italic;
+    margin-top: 20px;
+}
+
+#formContainer, #tareas, .display-none{
+    display: none;
+}
