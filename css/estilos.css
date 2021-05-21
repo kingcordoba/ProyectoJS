@@ -6,6 +6,7 @@ html, body {
 }
 
 body{
+    /*background-image: url(/img/pexels-lorenzo-242236.jpg);*/
     background-color: #e5e5e5;
 }
 
@@ -53,11 +54,11 @@ footer {
 }
 
 #btn-darkmode{
-    font-weight: bold;
+    font-weight: lighter;
 }
 
 .dark-mode{
-    background-color: black;
+    background-image: url(/img/pexels-mathias-pr-reding-4394232.jpg);
+    /*background-color: black;*/
     color: white;
-    
 }
