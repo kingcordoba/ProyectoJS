@@ -109,11 +109,9 @@ cambioColor.addEventListener('click', checkMode);
 function checkMode(){
     console.log('f')
     if(cambioColor.checked){
-        console.log('ready');
         darkmodeON();
     }
     else{
-        console.log('redynot');
         darkmodeOff();
     }
 }
