@@ -8,6 +8,7 @@
     --clr-label: white;
     --clr-background-footer:black;
     --clr-boxshadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
+    --clr-btn-agregar:#0033ff;
 }
 
 body{
@@ -62,6 +63,10 @@ label{
     background-color:var(--clr-textarea);
 }
 
+#btn-agregar{
+    background-color: var(--clr-btn-agregar)
+}
+
 footer {
     background-color:var(--clr-background-footer);
     color:var(--clr-tituloback);
@@ -89,6 +94,7 @@ footer {
     --clr-textarea: #474747;
     --clr-boxshadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.452);
     --clr-background-footer:#303030;
+    --clr-btn-agregar:#131d45;
 }
 
 .wrapper-color-switch{
@@ -140,3 +146,4 @@ footer {
 #btn-darkmode{
     display: none;
 }
+
