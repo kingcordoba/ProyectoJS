@@ -14,8 +14,7 @@ body {
     width: 100%;
     margin: 0;
     display: table;
-        /*background-image: url(/img/pexels-lorenzo-242236.jpg);*/
-        background-color:var(--clr-background);
+    background-color:var(--clr-background);
 }
 
 .navbar-brand{
@@ -82,7 +81,6 @@ footer {
 
 .dark-mode{
     background-image: url(/img/pexels-mathias-pr-reding-4394232.jpg);
-    /*background-color: black;*/
     --clr-fonts:white;
     --clr-cardbody: black;
     --clr-tituloback:black;
