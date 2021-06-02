@@ -6,6 +6,7 @@
     --clr-tituloback: white;
     --clr-textarea: white;
     --clr-label: white;
+    --clr-background-footer:black;
     --clr-boxshadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
 }
 
@@ -62,9 +63,10 @@ label{
 }
 
 footer {
-    background-color: black;
+    background-color:var(--clr-background-footer);
+    color:var(--clr-tituloback);
     display: table-row;
-    height: 0;
+    width: 100%;
     text-align: center;
 }
 
@@ -86,6 +88,7 @@ footer {
     --clr-tituloback:black;
     --clr-textarea: #474747;
     --clr-boxshadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.452);
+    --clr-background-footer:#303030;
 }
 
 .wrapper-color-switch{
