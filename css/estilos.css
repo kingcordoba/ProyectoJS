@@ -80,7 +80,7 @@ footer {
 }
 
 .dark-mode{
-    background-image: url(/img/pexels-mathias-pr-reding-4394232.jpg);
+    background-image: url(img/pexels-mathias-pr-reding-4394232.jpg);
     --clr-fonts:white;
     --clr-cardbody: black;
     --clr-tituloback:black;
