@@ -1,11 +1,12 @@
 :root{
     --clr-background: #e5e5e5;
-    /*--clr-fonts: #ebebeb;*/
+    --clr-primary: #006ea6;
     --clr-fonts: black;
     --clr-cardbody: white;
     --clr-tituloback: white;
     --clr-textarea: white;
     --clr-label: white;
+    --clr-boxshadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -41,7 +42,7 @@ label{
 
 .card{
     margin: 10px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--clr-boxshadow);
     margin-bottom: 50px;
 }
 
@@ -86,4 +87,55 @@ footer {
     --clr-cardbody: black;
     --clr-tituloback:black;
     --clr-textarea: #474747;
+    --clr-boxshadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.452);
+}
+
+.wrapper-color-switch{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1em;
+}
+
+.color-switch{
+    width: 4em;
+    height: 2em;
+    border-radius: 10em;
+    background: var(--clr-fonts);
+    border: 2px solid var(--clr-primary);
+    position: absolute;
+    cursor: pointer;
+}
+
+.color-switch-toggle{
+    width: 1.6em;
+    height: 1.6em;
+    background: var(--clr-primary);
+    position: absolute;
+    border-radius: 10em;
+    top: 0.1em;
+    left: 0.2em;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+.color-switch::before{
+    content: 'Light ON';
+    position: absolute;
+    display: inline-block;
+    width: 12em;
+    left:-5em;
+    top: 0.15em;
+}
+
+#btn-darkmode:checked ~ label .color-switch-toggle {
+    transform: translateX(1.8em);
+}
+
+#btn-darkmode:checked ~ .color-switch::before {
+    content:'Dark ON';
+}
+
+#btn-darkmode{
+    display: none;
 }
