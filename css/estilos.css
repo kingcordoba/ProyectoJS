@@ -1,18 +1,29 @@
-html, body {
+:root{
+    --clr-background: #e5e5e5;
+    /*--clr-fonts: #ebebeb;*/
+    --clr-fonts: black;
+    --clr-cardbody: white;
+    --clr-tituloback: white;
+    --clr-textarea: white;
+    --clr-label: white;
+}
+
+body {
     height: 100%;
     width: 100%;
     margin: 0;
     display: table;
-}
-
-body{
-    /*background-image: url(/img/pexels-lorenzo-242236.jpg);*/
-    background-color: #e5e5e5;
+        /*background-image: url(/img/pexels-lorenzo-242236.jpg);*/
+        background-color:var(--clr-background);
 }
 
 .navbar-brand{
     font-weight: bold;
     color: white;   
+}
+
+label{
+    color:var(--clr-label);
 }
 
 .row{
@@ -21,6 +32,7 @@ body{
 
 #descripcion-tarea{
     margin-top: 20px;
+    color:var(--clr-fonts);
 }
 
 .d-grid{
@@ -33,8 +45,20 @@ body{
     margin-bottom: 50px;
 }
 
+.card-body{
+    background-color:var(--clr-cardbody);
+    color:var(--clr-fonts);
+}
+
 #titulo{
     font-style: italic;
+    color:var(--clr-fonts);
+    background-color:var(--clr-tituloback)
+
+}
+
+#descripcion-tarea{
+    background-color:var(--clr-textarea);
 }
 
 footer {
@@ -47,18 +71,19 @@ footer {
 #datepicker {
     font-style: italic;
     margin-top: 20px;
+    color:var(--clr-fonts);
+    background-color:var(--clr-tituloback);
 }
 
 #formContainer, #tareas, .display-none{
     display: none;
 }
 
-#btn-darkmode{
-    font-weight: lighter;
-}
-
 .dark-mode{
     background-image: url(/img/pexels-mathias-pr-reding-4394232.jpg);
     /*background-color: black;*/
-    color: white;
+    --clr-fonts:white;
+    --clr-cardbody: black;
+    --clr-tituloback:black;
+    --clr-textarea: #474747;
 }

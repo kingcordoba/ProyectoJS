@@ -103,11 +103,27 @@ $(function () {
 });
 
 //DarkMode
-function darkmode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
+const cambioColor = document.getElementById("btn-darkmode");
+cambioColor.addEventListener('click', checkMode);
+
+function checkMode(){
+    console.log('f')
+    if(cambioColor.checked){
+        console.log('ready');
+        darkmodeON();
+    }
+    else{
+        console.log('redynot');
+        darkmodeOff();
+    }
 }
 
+function darkmodeON(){
+    document.body.classList.add("dark-mode")
+}
 
+function darkmodeOff(){
+    document.body.classList.remove("dark-mode")
+}
 
 
