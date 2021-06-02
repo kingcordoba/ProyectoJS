@@ -107,7 +107,6 @@ const cambioColor = document.getElementById("btn-darkmode");
 cambioColor.addEventListener('click', checkMode);
 
 function checkMode(){
-    console.log('f')
     if(cambioColor.checked){
         darkmodeON();
     }
