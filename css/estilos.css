@@ -7,6 +7,7 @@
     --clr-textarea: white;
     --clr-label: white;
     --clr-boxshadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
+    --clr-background-image: none;
 }
 
 body{
@@ -80,7 +81,7 @@ footer {
 }
 
 .dark-mode{
-    background-image: url(img/pexels-mathias-pr-reding-4394232.jpg);
+    --clr-background-image: url(img/pexels-mathias-pr-reding-4394232.jpg);
     --clr-fonts:white;
     --clr-cardbody: black;
     --clr-tituloback:black;
