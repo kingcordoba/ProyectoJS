@@ -108,14 +108,14 @@ cambioColor.addEventListener('click', checkMode);
 
 function checkMode(){
     if(cambioColor.checked){
-        darkmodeON();
+        darkmodeOn();
     }
     else{
         darkmodeOff();
     }
 }
 
-function darkmodeON(){
+function darkmodeOn(){
     document.body.classList.add("dark-mode")
 }
 
