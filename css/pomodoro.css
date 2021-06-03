@@ -30,45 +30,6 @@ label{
     color:var(--clr-label);
 }
 
-.row{
-    padding-top: 50px;
-}
-
-#descripcion-tarea{
-    margin-top: 20px;
-    color:var(--clr-fonts);
-}
-
-.d-grid{
-    padding-top: 20px;
-}
-
-.card{
-    margin: 10px;
-    box-shadow: var(--clr-boxshadow);
-    margin-bottom: 50px;
-}
-
-.card-body{
-    background-color:var(--clr-cardbody);
-    color:var(--clr-fonts);
-}
-
-#titulo{
-    font-style: italic;
-    color:var(--clr-fonts);
-    background-color:var(--clr-tituloback)
-
-}
-
-#descripcion-tarea{
-    background-color:var(--clr-textarea);
-}
-
-#btn-agregar{
-    background-color: var(--clr-btn-agregar)
-}
-
 footer {
     background-color:var(--clr-background-footer);
     color:var(--clr-tituloback);
@@ -76,34 +37,9 @@ footer {
     width: 100%;
     text-align: center;
 }
-
-#datepicker {
-    font-style: italic;
-    margin-top: 20px;
-    color:var(--clr-fonts);
-    background-color:var(--clr-tituloback);
-}
-
-#formContainer, #tareas, .display-none{
-    display: none;
-}
-
-.dark-mode{
-    --clr-background: #1a1a1a;
-    --clr-fonts:white;
-    --clr-cardbody: black;
-    --clr-tituloback:black;
-    --clr-textarea: #474747;
-    --clr-boxshadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.452);
-    --clr-background-footer:#303030;
-    --clr-btn-agregar:#131d45;
-    --clr-reloj:white;
-    --clr-borde-reloj:#e5e5e5;
-}
-
 .wrapper-color-switch{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     margin: 1em;
 }
@@ -149,4 +85,91 @@ footer {
 
 #btn-darkmode{
     display: none;
+}
+
+#container-reloj{
+    border-radius :20px;
+    width:100%;
+    margin:20px auto;
+    padding:20px;
+    text-align:center;
+}
+
+#timer{ 
+    color:var(--clr-reloj); 
+    font-size:50px; 
+    margin:10px auto;
+    border : 5px solid var(--clr-borde-reloj);
+    border-radius:50%;
+    width:200px;
+    height:200px;
+    overflow:hidden;
+    position:relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+}
+
+#time{
+    margin-top:60px;
+    z-index : 1;
+    position:relative;
+}
+
+#filler{
+    height: 0px;
+    width: 200px;
+    position:absolute;
+    bottom:0;
+}
+
+#buttons button { 
+    background:var(--clr-btn-agregar); 
+    border:none; 
+    color:#fff; 
+    cursor:pointer; 
+    padding:5px; 
+    width:90px; 
+    margin:10px auto;
+    font-size:14px;
+    height : 50px;
+    border-radius : 50px;
+}
+
+#buttons button#shortBreak{
+    background : #067800;
+}
+
+#buttons button#longBreak{
+    background : #044a00;
+    width:100px;
+} 
+#buttons button#stop{
+    background : #8f0000;
+}
+
+.dark-mode{
+    --clr-background: #1a1a1a;
+    --clr-fonts:white;
+    --clr-cardbody: black;
+    --clr-tituloback:black;
+    --clr-textarea: #474747;
+    --clr-boxshadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.452);
+    --clr-background-footer:#303030;
+    --clr-btn-agregar:#131d45;
+    --clr-reloj:white;
+    --clr-borde-reloj:#e5e5e5;
+}
+
+.texto-pomodoro{
+    font-style: italic;
+    color: var(--clr-fonts);
+    text-align: center;
+}
+
+.texto-pomodoro p{
+    font-weight: 700;
+    font-style: normal;
 }
