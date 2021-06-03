@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="icon" href="img/icon.svg">
-    <title>Tareas APP</title>
+    <title>Tareas APP-Pomodoro</title>
 </head>
 <body>
     <!--Barra-->
@@ -33,40 +33,39 @@
         </div>
     </nav>
     <!--Contenido-->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card" id="formContainer">
-                    <div class="card-body">
-                        <form id="formTareas">
-                            <div class="form-group">
-                                <input type="text" id="titulo" autocomplete="off" placeholder="Agrega una Tarea" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <textarea id="descripcion-tarea" autocomplete="off" cols="30" rows="10" class="form-control" placeholder="Qué debes hacer?" ></textarea>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" id="datepicker" autocomplete="off" placeholder="Selecciona Fecha" class="form-control">
-                            </div>
-                            <div class="d-grid gap-2">
-                                <button class="btn btn-primary" id="btn-agregar" type="submit">Agregar</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+    <div id="pomodoro">
+        <div id="container-reloj">
+            <div id="timer">
+            <div id="time">
+                <span id="minutes">25</span>
+                <span id="colon">:</span>
+                <span id="seconds">00</span>
             </div>
-            <div class="col-md-8">
-                <div id="tareas">
-                    
-                </div>
+            <div id="filler"></div>
+            </div>
+            <div id="buttons">
+            <button id="work">Iniciar</button>
+            <button id="shortBreak">Descanso(5')</button>
+            <button id="longBreak">Descanso(15')</button>
+            <button id="stop">Parar</button>
             </div>
         </div>
+    </div>
+    <div class="texto-pomodoro">
+        <p>La técnica Pomodoro</p>
+        <blockquote>
+            Consiste en usar un temporizador para dividir el trabajo en bloques 
+            de tiempo enfocados (generalmente 25 minutos) separados por un breve 
+            descanso, generalmente de cinco minutos.
+        </blockquote>
+    </div>
+    <div>
     </div>
     <!--JQuery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!--JS-->
-    <script src="js/main.js"></script>       
+    <script src="js/pomodoro.js"></script>
 </body>
 <!-- Footer -->
     <footer class="page-footer fixed-bottom">

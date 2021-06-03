@@ -9,6 +9,8 @@
     --clr-background-footer:black;
     --clr-boxshadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
     --clr-btn-agregar:#0033ff;
+    --clr-reloj:#006ea6;
+    --clr-borde-reloj:#006ea6;
 }
 
 body{
@@ -95,6 +97,8 @@ footer {
     --clr-boxshadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.452);
     --clr-background-footer:#303030;
     --clr-btn-agregar:#131d45;
+    --clr-reloj:white;
+    --clr-borde-reloj:#e5e5e5;
 }
 
 .wrapper-color-switch{
@@ -127,11 +131,11 @@ footer {
 }
 
 .color-switch::before{
-    content: 'Light ON';
+    content: 'Light';
     position: absolute;
     display: inline-block;
     width: 12em;
-    left:-5em;
+    left:-3em;
     top: 0.15em;
 }
 
@@ -140,10 +144,84 @@ footer {
 }
 
 #btn-darkmode:checked ~ .color-switch::before {
-    content:'Dark ON';
+    content:'Dark';
 }
 
 #btn-darkmode{
     display: none;
 }
 
+/*Pomodoro*/
+#container-reloj{
+    border-radius :20px;
+    width:100%;
+    margin:20px auto;
+    padding:20px;
+    text-align:center;
+}
+
+#timer{ 
+    color:var(--clr-reloj); 
+    font-size:50px; 
+    margin:10px auto;
+    border : 5px solid var(--clr-borde-reloj);
+    border-radius:50%;
+    width:200px;
+    height:200px;
+    overflow:hidden;
+    position:relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+}
+
+#time{
+    margin-top:60px;
+    z-index : 1;
+    position:relative;
+}
+
+#filler{
+    height: 0px;
+    width: 200px;
+    position:absolute;
+    bottom:0;
+}
+
+#buttons button { 
+    background:var(--clr-btn-agregar); 
+    border:none; 
+    color:#fff; 
+    cursor:pointer; 
+    padding:5px; 
+    width:90px; 
+    margin:10px auto;
+    font-size:14px;
+    height : 50px;
+    border-radius : 50px;
+}
+
+#buttons button#shortBreak{
+    background : #067800;
+}
+
+#buttons button#longBreak{
+    background : #044a00;
+    width:100px;
+} 
+#buttons button#stop{
+    background : #8f0000;
+}
+
+.texto-pomodoro{
+    font-style: italic;
+    color: var(--clr-fonts);
+    text-align: center;
+}
+
+.texto-pomodoro p{
+    font-weight: 700;
+    font-style: normal;
+}
